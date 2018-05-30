@@ -1,0 +1,237 @@
+<resources>
+    <string name="app_name">ChatOps</string>
+    <string name="message">消息</string>
+    <string name="message_at_me">\@我的消息</string>
+    <string name="operations">应用中心</string>
+    <string name="collect">收藏</string>
+    <string name="mine">我的</string>
+    <string name="mail">邮箱</string>
+    <string name="phone">手机号码</string>
+    <string name="qq">QQ号</string>
+    <string name="wechat">微信号</string>
+    <string name="cur_version">当前版本:    </string>
+    <string name="webside">网站名称</string>
+    <string name="about">关于</string>
+    <string name="logout">退出登录</string>
+    <string name="chatops">ChatOps</string>
+    <string name="first_text1">即时运维协同</string>
+    <string name="first_text2">为了正常访问ChatOps，请设置服务器：</string>
+    <string name="first_text3">请输入服务器地址，如http://10.1.1.1</string>
+    <string name="into_login">进入登录</string>
+    <string name="complete">完成</string>
+
+    <string name="parse_error">解析错误</string>
+    <string name="connect_error">连接失败</string>
+    <string name="certificate_validation_failed">证书验证失败</string>
+    <string name="cannot_connect_to_server">连接不到服务器</string>
+    <string name="server_error">服务器错误</string>
+    <string name="account_or_psd_error">用户名或密码错误</string>
+
+    <string name="mailnum">请输入您的邮箱、手机号或账号</string>
+    <string name="password">密码</string>
+    <string name="confilmword">验证码</string>
+    <string name="login">登录</string>
+    <string name="loginerrOnline">账号或密码错误，请重新输入</string>
+    <string name="configservice">服务器配置</string>
+    <string name="setservice">服务器地址:</string>
+    <string name="back">返回</string>
+    <string name="close">关闭</string>
+    <string name="save">保存</string>
+    <string name="serviceiperr">服务器地址错误</string>
+    <string name="emali_error">邮箱格式不正确</string>
+    <string name="hint">确定退出登录吗？</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确定</string>
+    <string name="net_error">网络连接异常</string>
+    <string name="picture">照片图库</string>
+    <string name="photograph">拍照</string>
+    <string name="server_cannot_be_null">服务器地址不能为空</string>
+    <string name="login_ing">登录中</string>
+    <string name="login_success">登录成功</string>
+    <string name="name_pwd_not_null">用户名密码不能为空</string>
+    <string name="confilm_pwd_not_null">验证码不能为空</string>
+    <string name="confilm_error">验证码错误</string>
+    <string name="upload_ing">上传中</string>
+    <string name="action_settings">Settings</string>
+    <string name="select_mode">Select Mode</string>
+    <string name="mode_single">Single-Choice</string>
+    <string name="mode_multi">Multi-Choice</string>
+    <string name="max_select_amount">Max Selected Amount</string>
+    <string name="hint_default_amount">default amount is 9</string>
+    <string name="enable_camera">Enable Camera</string>
+    <string name="enable">Enable</string>
+    <string name="disable">Disable</string>
+    <string name="go_select">Select</string>
+    <string name="folder_all">All Images</string>
+    <string name="preview">Preview</string>
+    <string name="msg_no_camera">No system camera found</string>
+    <string name="msg_amount_limit">最多只能选9张照片</string>
+    <string name="action_done">发送</string>
+    <string name="photo_unit">Shot</string>
+    <string name="tip_take_photo">Take photo</string>
+    <string name="loading">正在加载</string>
+
+    <string name="mis_folder_all">所有照片</string>
+    <string name="mis_preview">预览</string>
+    <string name="mis_msg_no_camera">没有系统相机</string>
+    <string name="mis_msg_amount_limit">已经达到最高选择数量</string>
+    <string name="mis_action_done">完成</string>
+    <string name="mis_photo_unit">张</string>
+    <string name="mis_tip_take_photo">拍摄照片</string>
+    <string name="mis_error_image_not_exist">图片错误</string>
+    <string name="mis_error_no_permission">无权限</string>
+    <string name="mis_permission_dialog_title">权限拒绝</string>
+    <string name="mis_permission_dialog_ok">好</string>
+    <string name="mis_permission_dialog_cancel">拒绝</string>
+    <string name="mis_permission_rationale">浏览图片需要您提供浏览存储的权限</string>
+    <string name="mis_permission_audio">语音聊天需要您提供麦克风权限</string>
+    <string name="mis_permission_audio_write">语音聊天需要您提供写存储权限</string>
+    <string name="mis_permission_rationale_write_storage">保存拍照图片需要您提供写存储权限</string>
+
+    <string name="account">账号</string>
+    <string name="nickname">昵称</string>
+    <string name="contacts">通讯录</string>
+    <string name="label">看板</string>
+    <string name="label_edit">看板编辑</string>
+    <string name="add">添加</string>
+    <string name="add_label">添加看板</string>
+    <string name="please_add_label">请先添加卡片到看板</string>
+    <string name="manage_label">管理看板</string>
+    <string name="all_label_added">已添加所有卡片</string>
+    <string name="more">更多</string>
+    <string name="leak_memory">内存不足</string>
+    <string name="laber_no_data">暂时无数据</string>
+    <string name="printSize">打印尺寸</string>
+    <string name="printCount">打印数量</string>
+    <string name="print">打印</string>
+
+
+    <string name="scanner_view_tip_text">将二维码放入框内，即可自动扫描</string>
+    <string name="scan">扫一扫</string>
+    <string name="scan_result">扫码结果</string>
+    <string name="mm">毫米</string>
+    <string name="print_setup">打印设置</string>
+    <string name="max_num">最大值为100</string>
+    <string name="min_num">最小值为1</string>
+    <string name="num_cannot_under_zero">打印数量不能为0</string>
+    <string name="network_anomaly">网络异常</string>
+    <string name="network_settings">请检查网络设置</string>
+    <string name="reset">重置</string>
+    <string name="update_lat_lon">更新经纬度</string>
+
+    <string name="service_address">服务器地址</string>
+    <string name="version_update">版本更新</string>
+    <string name="update_content">更新内容：</string>
+    <string name="update_now">立即更新</string>
+
+    <string name="update_hint">检测到新版本</string>
+    <string name="update_hint_content">最新版本已上线，请尽快更新</string>
+    <string name="next_time">下次再说</string>
+    <string name="newest_version">当前已是最新版本</string>
+    <string name="know">知道了</string>
+
+
+    <string name="device_code">设备编码：</string>
+    <string name="device_name">设备名称：</string>
+    <!--<string name="device_factory">设备厂商：</string>-->
+    <string name="device_factory">摄像机品牌：</string>
+    <string name="device_model">设备型号：</string>
+    <string name="administrative_division">行政区域：</string>
+    <string name="monitor_type">监控点位类型：</string>
+    <string name="location_name">点位俗称：</string>
+    <string name="IPV4_address">IPV4：</string>
+    <string name="IPV6_address">IPV6地址：</string>
+    <string name="mac_address">MAC 地址：</string>
+    <string name="camera_type">摄像机类型：</string>
+    <string name="camera_function_type">摄像机功能类型：</string>
+    <string name="fill_light">补光属性：</string>
+    <string name="camera_code">摄像机编码格式：</string>
+    <string name="install_address">安装地址：</string>
+    <string name="longitude">经度：</string>
+    <string name="latitude">纬度：</string>
+    <string name="camera_location_type">摄像机位置类型：</string>
+    <string name="monitor_position">监视方位：</string>
+    <string name="network_property">联网属性：</string>
+    <string name="police">所属辖区公安机关：</string>
+    <string name="install_time">安装时间：</string>
+    <string name="MUs">管理单位：</string>
+    <string name="MUs_phone">管理单位联系方式：</string>
+    <string name="save_days">录像保存天数：</string>
+    <string name="device_type">设备状态：</string>
+    <string name="department">所属部门/行业：</string>
+
+    <string name="name">名称：</string>
+    <string name="jingdu">经度：</string>
+
+    <string name="weidu">纬度：</string>
+    <string name="map_service">地图服务</string>
+
+    <string name="required">必填项</string>
+    <string name="non_required">非必填项</string>
+    <string name="info_revise">信息修改</string>
+    <string name="revise_success">修改成功</string>
+
+    <string name="reset2">复位</string>
+
+    <string name="SXJGNLX1">车辆卡口</string>
+    <string name="SXJGNLX2">人员卡口</string>
+    <string name="SXJGNLX3">微卡口</string>
+    <string name="SXJGNLX4">特征摄像机</string>
+    <string name="SXJGNLX5">普通监控</string>
+    <string name="SXJGNLX6">其他</string>
+
+    <string name="SXJWZLX1">省际检查站</string>
+    <string name="SXJWZLX2">党政机关</string>
+    <string name="SXJWZLX3">车站码头</string>
+    <string name="SXJWZLX4">中心广场</string>
+    <string name="SXJWZLX5">体育场馆</string>
+    <string name="SXJWZLX6">商业中心</string>
+    <string name="SXJWZLX7">宗教场所</string>
+    <string name="SXJWZLX8">校园周边</string>
+    <string name="SXJWZLX9">治安复杂区域</string>
+    <string name="SXJWZLX10">交通干线</string>
+    <string name="SXJWZLX11">医院周边</string>
+    <string name="SXJWZLX12">金融机构周边</string>
+    <string name="SXJWZLX13">危险物品场所周边</string>
+    <string name="SXJWZLX14">博物馆展览馆</string>
+    <string name="SXJWZLX15">重点水域、航道</string>
+    <string name="SXJWZLX16">市际公安检查站</string>
+    <string name="SXJWZLX17">涉外场所</string>
+    <string name="SXJWZLX18">边境沿线</string>
+    <string name="SXJWZLX19">旅游景区</string>
+
+    <string name="SSBMHY1">公安机关</string>
+    <string name="SSBMHY2">环保部门</string>
+    <string name="SSBMHY3">文博部门</string>
+    <string name="SSBMHY4">医疗部门</string>
+    <string name="SSBMHY5">旅游管理</string>
+    <string name="SSBMHY6">新闻广电</string>
+    <string name="SSBMHY7">食品医药监督管理部门</string>
+    <string name="SSBMHY8">教育管理部门</string>
+    <string name="SSBMHY9">检察院</string>
+    <string name="SSBMHY10">法院</string>
+    <string name="SSBMHY11">金融部门</string>
+    <string name="SSBMHY12">交通部门</string>
+    <string name="SSBMHY13">住房和城乡建设部门</string>
+    <string name="SSBMHY14">水利部门</string>
+    <string name="SSBMHY15">林业部门</string>
+    <string name="SSBMHY16">安全生产监督部门</string>
+    <string name="SSBMHY17">市政市容委</string>
+    <string name="SSBMHY18">国土局</string>
+
+    <string name="back_hint">您确定要放弃编辑吗？</string>
+
+    <string name="give_up">放弃</string>
+    <string name="go_on">继续填写</string>
+    
+    
+    <string name="btn_scroll_view">ScrollView demo</string>
+    <string name="btn_list_view">ListView demo</string>
+
+    <string name="header_hint_refresh_normal">下拉刷新</string>
+    <string name="header_hint_refresh_ready">松开刷新</string>
+    <string name="header_hint_refresh_loading">正在刷新数据中&#8230;</string>
+    <string name="header_hint_refresh_time">最后更新：</string>
+    <string name="footer_hint_load_normal">Load more</string>
+    <string name="footer_hint_load_ready">Release to load more</string>
+</resources>

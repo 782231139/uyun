@@ -1,0 +1,78 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    signingConfigs {
+        debugConfig{
+            storeFile file('keystory.jks')
+            storePassword "123456789"
+            keyAlias "keystory"
+            keyPassword "123456"
+        }
+        releaseConfig {
+            storeFile file('keystory.jks')
+            storePassword "123456789"
+            keyAlias "keystory"
+            keyPassword "123456"
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            assets.srcDirs = ['src/main/assets']
+            java.srcDirs = ['src/main/java', 'src/main/aidl']
+        }
+    }
+    defaultConfig {
+        applicationId "com.uyun.hummer"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 3
+        versionName "0.14.10"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug{
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debugConfig
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.releaseConfig
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        def fileName = "UYUN-ChatOps-Android.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+    }
+}
+android {
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/tbs_sdk_thirdapp_v3.1.0.1034_43100_sharewithdownload_obfs_20170301_182143.jar')
+    compile 'com.android.support:support-v4:25.2.0'
+    compile 'io.reactivex:rxjava:1.1.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.android.support:design:25.2.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.7.0'
+//    compile files('PATH_SDK/android-agent-1.0.0.jar')
+    compile 'de.greenrobot:eventbus:3.0.0-beta1'
+    compile 'com.google.zxing:core:3.3.0'
+    compile 'com.zhy:okhttputils:2.6.2'
+}

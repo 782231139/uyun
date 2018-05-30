@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FA"
+    android:fitsSystemWindows="true">
+    <include layout="@layout/layout_title_showtext" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:id="@+id/layout_camera"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:gravity="center_vertical"
+                android:background="#F6F7FB">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/required"
+                    android:layout_marginLeft="11dp"
+                    android:textColor="#999999"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/lon_lat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/update_lat_lon"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#4988E7"
+                    android:layout_marginRight="11dp"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/device_code"/>
+                <EditText
+                    android:id="@+id/device_code"
+                    style="@style/mapEdit"
+                    android:text="武珞路中建三局正门"
+                    android:enabled="false"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/device_name"/>
+                <EditText
+                    android:id="@+id/device_name"
+                    style="@style/mapEdit"
+                    android:enabled="false"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/device_factory"/>
+                <TextView
+                    android:id="@+id/SBCS"
+                    style="@style/mapEdit"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/administrative_division"/>
+                <EditText
+                    android:id="@+id/administrative_division"
+                    style="@style/mapEdit"
+                    android:enabled="false"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/monitor_type"/>
+                <TextView
+                    android:id="@+id/JKDWLX"
+                    style="@style/mapEdit"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/install_address"/>
+                <EditText
+                    android:id="@+id/install_address"
+                    style="@style/mapEdit"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/longitude"/>
+                <EditText
+                    android:id="@+id/longitude"
+                    style="@style/mapEdit"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/latitude"/>
+                <EditText
+                    android:id="@+id/latitude"
+                    style="@style/mapEdit"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout"
+                android:id="@+id/SXJWZLX_ll">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/camera_location_type"/>
+                <TextView
+                    android:id="@+id/SXJWZLX"
+                    style="@style/mapEdit"
+                    />
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/network_property"/>
+                <TextView
+                    android:id="@+id/LWSX"
+                    style="@style/mapEdit"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/police"/>
+                <EditText
+                    android:id="@+id/police"
+                    style="@style/mapEdit"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/install_time"/>
+                <TextView
+                    android:id="@+id/AZSJ"
+                    style="@style/mapEdit"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/MUs"/>
+                <EditText
+                    android:id="@+id/MUs"
+                    style="@style/mapEdit"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/MUs_phone"/>
+                <EditText
+                    android:id="@+id/MUs_phone"
+                    style="@style/mapEdit"
+                    />
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/save_days"/>
+                <EditText
+                    android:id="@+id/save_days"
+                    style="@style/mapEdit"
+                    android:inputType="number"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/device_type"/>
+                <TextView
+                    android:id="@+id/SBZT"
+                    style="@style/mapEdit"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:gravity="center_vertical"
+                android:background="#F6F7FB">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/non_required"
+                    android:layout_marginLeft="11dp"
+                    android:textColor="#999999"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/device_model"/>
+                <EditText
+                    android:id="@+id/device_model"
+                    style="@style/mapEdit"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/location_name"/>
+                <EditText
+                    android:id="@+id/location_name"
+                    style="@style/mapEdit"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/IPV4_address"/>
+                <EditText
+                    android:id="@+id/IPV4_address"
+                    style="@style/mapEdit"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/IPV6_address"/>
+                <EditText
+                    android:id="@+id/IPV6_address"
+                    style="@style/mapEdit"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/mac_address"/>
+                <EditText
+                    android:id="@+id/mac_address"
+                    style="@style/mapEdit"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/camera_type"/>
+                <TextView
+                    android:id="@+id/SXJLX"
+                    style="@style/mapEdit"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout"
+                android:id="@+id/SXJGNLX_ll">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/camera_function_type"/>
+                <TextView
+                    android:id="@+id/SXJGNLX"
+                    style="@style/mapEdit"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/fill_light"/>
+                <TextView
+                    android:id="@+id/BGSX"
+                    style="@style/mapEdit"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/camera_code"/>
+                <TextView
+                    android:id="@+id/SXJBMGS"
+                    style="@style/mapEdit"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/monitor_position"/>
+                <TextView
+                    android:id="@+id/JSFW"
+                    style="@style/mapEdit"/>
+            </LinearLayout>
+            <View  style="@style/mapView"/>
+            <LinearLayout style="@style/mapLayout"
+                android:id="@+id/SSBMHY_ll">
+                <TextView
+                    style="@style/mapTextTit"
+                    android:text="@string/department"/>
+                <TextView
+                    android:id="@+id/SSBMHY"
+                    style="@style/mapEdit"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#ccc"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:background="#fff"
+            android:textColor="#4988E9"
+            android:textSize="18sp"/>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#ccc"/>
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/save"
+            android:background="#4988E9"
+            android:textColor="#fff"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</LinearLayout>

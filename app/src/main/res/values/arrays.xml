@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main">
+        <item>@string/message</item>
+        <item>@string/label</item>
+        <item>@string/operations</item>
+        <item>@string/contacts</item>
+        <item>@string/mine</item>
+    </string-array>
+    <integer-array name="main_icon">
+        <item>@drawable/tab_msg_selector</item>
+        <item>@drawable/tab_label_selector</item>
+        <item>@drawable/tab_operations_selector</item>
+        <item>@drawable/tab_contacts_selector</item>
+        <item>@drawable/tab_mine_selector</item>
+    </integer-array>
+</resources>

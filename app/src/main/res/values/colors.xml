@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="lib_system_bar_color">#4988e8</color>
+    <color name="black">#000000</color>
+    <color name="lightYellow">#FF8C00</color>
+    <color name="tab_text_default">#929292</color>
+    <color name="tab_text_selected">#4988e8</color>
+    <color name="btn_item_selected">#F6F8FA</color>
+    <color name="manage_label_p">#ffffff</color>
+    <color name="manage_label_n">#4988E8</color>
+
+    <color name="scan_frame_green_color">#4988E8</color>
+    <color name="scan_line_color">#98C360</color>
+    <color name="scan_view_bg">#64000000</color>
+    <color name="scan_view_tip_color">#AFAFAF</color>
+
+    <color name="province_line_border">#D0D0D0</color>
+
+    <color name="btn_reset_default">#ffb759</color>
+    <color name="btn_reset_selected">#c9c9c9</color>
+    <color name="btn_sure_default">#4988E8</color>
+    <color name="btn_sure_selected">#265fc5</color>
+    
+    <color name="transparent">#00000000</color>
+    <color name="background">#F7F4F0</color>
+    <color name="title_color">#333333</color>
+</resources>

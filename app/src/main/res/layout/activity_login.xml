@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="62dp"
+        >
+        <ImageView
+            android:id="@+id/imgtit"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/chatopslogo"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="98dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/imgtit"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16.4dp">
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chatops"
+                android:textSize="22sp"
+                android:textColor="#4988e8"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/text_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/first_text1"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:textColor="#4988e8"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <com.uyun.hummer.view.ClearEditText
+        android:id="@+id/login_user"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="57dp"
+        android:background="@drawable/login_edit"
+        android:drawableLeft="@drawable/loginuser"
+        android:hint="@string/mailnum"
+        android:textColorHint="#b3b3b3"
+        android:textSize="15sp" />
+
+
+    <com.uyun.hummer.view.ClearEditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/login_edit"
+        android:drawableLeft="@drawable/loginpassword"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textColorHint="#b3b3b3"
+        android:textSize="15sp" />
+
+
+    <LinearLayout
+        android:id="@+id/layoutConfilmword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/confilmword"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/login_edit"
+            android:drawableLeft="@drawable/login_code"
+            android:hint="@string/confilmword"
+            android:textColorHint="#b3b3b3"
+            android:textSize="15sp" />
+
+        <FrameLayout
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp">
+
+            <ImageView
+                android:id="@+id/confilm_icon"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:src="@drawable/load_error"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/confilm_loading"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/loading2" />
+        </FrameLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/login_btn_gray"
+        android:clickable="false"
+        android:text="@string/login"
+        android:textColor="#fff"
+        android:textSize="17sp" />
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/setservice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/setservice"
+        android:textColor="#4988e8"
+        android:textSize="15sp" />
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="213dp"
+    android:background="#00000000">
+<LinearLayout
+    android:id="@+id/my_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="213dp"
+    android:layout_alignParentBottom="true"
+    android:background="#fff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择点位"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/camera_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择点位（10）"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/showlist_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="展开"
+            android:textSize="15sp"
+            android:textColor="#4889E7"/>
+        <TextView
+            android:id="@+id/route_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="导航"
+            android:textSize="15sp"
+            android:textColor="#4889E7"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+    <Button
+        android:id="@+id/info_revise"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#C6C6C6"
+        android:text="@string/info_revise"
+        android:textColor="#fff"
+        android:textSize="16sp"/>
+</LinearLayout>
+</RelativeLayout>
